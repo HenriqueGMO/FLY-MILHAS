@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/passagens.css">
+    <script src="https://kit.fontawesome.com/bb1a576acc.js" crossorigin="anonymous"></script>
+    <title>Passagens</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="troca-milhas.html">Troca de Milhas</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Passagens</a></li>
+        </ul>
+        <ul>
+            <li><a href="/inicial.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="image">
+        <img src="/images/123__2_-removebg-preview.png" alt="" style="width: 200px;">
+    </div>
+
+        <div class="slider"></div>
+<br><br>
+
+<div class="escolha-destino">
+    <h2 style="font-family: sans-serif; color: #4D4D4E;">PASSAGENS AÉREAS</h2>
+    <input type="text" placeholder="De onde você está indo?" required>
+    <input type="text" placeholder="Para onde você vai?" required>
+    <br><br>
+    <div class="radio">
+        <input type="radio" name="viagem" value="ida_e_volta" id="ida_e_volta" onclick="exibirCamposData()"> Ida e volta<br>
+        <input type="radio" name="viagem" value="apenas_ida" id="apenas_ida" onclick="exibirCamposData()" style="margin-left: 25px;"> Apenas ida<br>
+    </div>
+    <br>
+    <label style="font-family: Poppins; font-weight: bold;">Data de ida:</label>
+    <input type="date" id="data-ida">
+    <br>
+    <br>
+    <div id="data-volta">
+        <label style="font-family: Poppins; font-weight: bold;">Data de volta:</label>
+        <input type="date">
+    </div>
+<br><br>
+<button style="background-color: #ff6961;
+height: 40px;
+width: 200px;
+font-weight: bold;
+font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #333;
+">BUSCAR VOOS</button>
+</div>
+<br>
+<div class="banner">
+    <img src="/images/banner.png" alt="" style="width: 1300px; height: 400px; margin-top: 200px; margin-left: 115px; border-radius: 20px; cursor: pointer;"
+    onclick="trocarMilhas()"
+    >
+    <h5 style="font-family: Poppins; color: gray; margin-left: 120px; margin-top: 0px;">*Válido até 25/12/2026</h5>
+</div>
+
+<div class="banner2">
+    <img src="/images/banner2.png" alt="" style="margin-left: 150px; border-radius: 15px; cursor: pointer;"
+    onclick="venderMilhas()"
+    >
+</div>
+
+    <div class="slider2" style="margin-top: 100px;"></div>
+    <h2 style="font-family: Open sans; font-size: 30px;  margin-left: 520px; margin-top: -250px;" class="contorno-texto">Melhores preços para você é aqui!</h2>
+
+    <h2 style="font-family: sans-serif; color: #4D4D4E; margin-top: 150px; margin-left: 125px;">VIAGENS NACIONAIS COM ATÉ 50% DE DESCONTO</h2>
+    <h4 style="font-family: Open sans; margin-top: -20px; margin-left: 125px;"><strong style="color: #4D4D4E; font-weight: bold;">Saída:</strong> Goiânia</h4>
+    
+    <div class="viagens-50">
+            <div class="RJ">
+                <img src="https://www.guiadasemana.com.br/contentFiles/image/opt_w320h320/2016/11/FEA/53018_rio2.jpg" alt="Rio de Janeiro" style="border-radius: 25px;">
+                <p style="font-family: sans-serif; background-color: #00AD46; padding: 5px; width: 80px; height: 20px; margin-left: 240px; margin-top: -300px; display: flex; justify-content: center; align-items: center;" class="text-overlay">mais barato</p>
+                <div class="text" style="bottom: 40px; font-family: sans-serif; font-weight: bold;  left: 120px; top: 130px;">R$ 439</div>
+                <div class="text" style="bottom: 60px; font-family: Open sans; font-weight: bold; left: 105px; top: 105px;">A PARTIR DE</div>
+                <div class="text" style="bottom: 100px; font-family: sans-serif; font-weight: bold; left: 80px; top: 60px; font-size: 23px;">Rio de Janeiro</div>
+                <button class="button">VER MAIS</button>
+            </div>
+    
+            <div class="FZ">
+                <img src="https://e48.anicer.com.br/wp-content/uploads/2018/12/foto_foz1.jpg" alt="" style="border-radius: 25px;">
+                <div class="text" style="bottom: 40px; font-family: sans-serif; font-weight: bold; left: 125px; top: 130px;">R$ 904</div>
+                <div class="text" style="bottom: 60px; font-family: Open sans; font-weight: bold; left: 105px; top: 105px;">A PARTIR DE</div>
+                <div class="text" style="bottom: 100px; font-family: sans-serif; font-weight: bold; left: 80px; top: 60px; font-size: 23px;">Foz do Iguaçu</div>
+                <button class="button">VER MAIS</button>
+            </div>
+
+            <div class="SA">
+                <img src="https://media.istockphoto.com/id/540586506/pt/foto/coloridas-casas-coloniais-no-pelourinho-salvador-bahia-brasil.jpg?s=612x612&w=0&k=20&c=lu0MTVKz-1HldXJj6q6DFS1U5oIkDpa-JrntoF0ZLQI=" alt="" style="border-radius: 25px;">
+                <div class="text" style="bottom: 40px; font-family: sans-serif; font-weight: bold; left: 125px; top: 130px;">R$ 838</div>
+                <div class="text" style="bottom: 60px; font-family: Open sans; font-weight: bold; left: 105px; top: 105px;">A PARTIR DE</div>
+                <div class="text" style="bottom: 100px; font-family: sans-serif; font-weight: bold; left: 105px; top: 60px; font-size: 23px;">Salvador</div>
+                <button class="button">VER MAIS</button>
+            </div>
+
+            <div class="PS">
+                <img src="https://media.istockphoto.com/id/1303933249/pt/foto/is-a-district-of-the-brazilian-municipality-of-porto-seguro-on-the-coast-of-the-state-of-bahia.jpg?s=612x612&w=0&k=20&c=-1Iv1JrF8co_HbqD8JaBeObW70ibUWw4vUeY_4K9-BQ=" alt="" style="border-radius: 25px;">
+                <div class="text" style="bottom: 40px; font-family: sans-serif; font-weight: bold; left: 125px; top: 130px;">R$ 508</div>
+                <div class="text" style="bottom: 60px; font-family: Open sans; font-weight: bold; left: 105px; top: 105px;">A PARTIR DE</div>
+                <div class="text" style="bottom: 100px; font-family: sans-serif; font-weight: bold; left: 80px; top: 60px; font-size: 23px;">Porto Seguro</div>
+                <button class="button">VER MAIS</button>
+            </div>
+    </div>
+    <h2 style="font-family: sans-serif; color: #4D4D4E; margin-top: 100px; margin-left: 125px;">VIAGENS INTERNACIONAIS COM ATÉ 30% DE DESCONTO</h2>
+    <h4 style="font-family: Open sans; margin-top: -20px; margin-left: 125px;"><strong style="color: #4D4D4E; font-weight: bold;">Saída:</strong> Goiânia</h4>
+    <div class="viagens-int50">
+        <div class="PA">
+            <img src="https://static.wixstatic.com/media/996736_4a2ee118fc44488d8cf95ec1e97f16a7~mv2_d_3024_3024_s_4_2.jpg/v1/fit/w_320%2Ch_1000%2Cal_c%2Cq_80,enc_auto/file.jpg" alt="" style="border-radius: 25px;">
+            <div class="text" style="bottom: 40px; font-family: sans-serif; font-weight: bold; left: 115px; top: 130px;">R$ 2.136</div>
+                <div class="text" style="bottom: 60px; font-family: Open sans; font-weight: bold; left: 105px; top: 105px;">A PARTIR DE</div>
+                <div class="text" style="bottom: 100px; font-family: sans-serif; font-weight: bold; left: 125px; top: 60px; font-size: 23px;">Paris</div>
+                <button class="button">VER MAIS</button>
+        </div>
+
+        <div class="MC">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sunset_across_Machu_Picchu.jpg/640px-Sunset_across_Machu_Picchu.jpg" alt="" style="border-radius: 25px;">
+            <p style="font-family: sans-serif; background-color: #00AD46; padding: 5px; width: 80px; height: 20px; margin-left: 240px; bottom: 310px; z-index: 1; font-weight: bold; position: relative; display: flex; justify-content: center; align-items: center; font-size: 12px;" class="text-overlay2">mais barato</p>
+            <div class="text" style="bottom: 40px; font-family: sans-serif; font-weight: bold; left: 125px; top: 130px;">R$ 843</div>
+                <div class="text" style="bottom: 60px; font-family: Open sans; font-weight: bold; left: 105px; top: 105px;">A PARTIR DE</div>
+                <div class="text" style="bottom: 100px; font-family: sans-serif; font-weight: bold; left: 80px; top: 60px; font-size: 23px;">Machu Picchu</div>
+                <button class="button">VER MAIS</button>
+        </div>
+
+        <div class="LA">
+            <img src="https://wp.oggusto.com/wp-content/uploads/2022/09/los-angeles-gezi-768x614-1-600x480.webp" alt="" style="border-radius: 25px;">
+            <p style="font-family: sans-serif; background-color: #FFB120; padding: 5px; width: 80px; height: 20px; margin-left: 240px; bottom: 310px; z-index: 1; font-weight: bold; position: relative; display: flex; justify-content: center; align-items: center; font-size: 12px;" class="text-overlay2">40% de desconto</p>
+            <div class="text" style="bottom: 40px; font-family: sans-serif; font-weight: bold; left: 115px; top: 130px;">R$ 1.138</div>
+            <div class="text" style="bottom: 60px; font-family: Open sans; font-weight: bold; left: 105px; top: 105px;">A PARTIR DE</div>
+            <div class="text" style="bottom: 100px; font-family: sans-serif; font-weight: bold; left: 90px; top: 60px; font-size: 23px;">Los Angeles</div>
+            <button class="button">VER MAIS</button>
+        </div>
+
+        <div class="MO">
+            <img src="https://d2yfnz5to9nvdi.cloudfront.net/wp-content/uploads/2018/04/guia-destinos-voesimples-europa-russia-moscou-01.jpg" alt="" style="border-radius: 25px;">
+            <div class="text" style="bottom: 40px; font-family: sans-serif; font-weight: bold; left: 115px; top: 130px;">R$ 2.887</div>
+            <div class="text" style="bottom: 60px; font-family: Open sans; font-weight: bold; left: 105px; top: 105px;">A PARTIR DE</div>
+            <div class="text" style="bottom: 100px; font-family: sans-serif; font-weight: bold; left: 113px; top: 60px; font-size: 23px;">Moscou</div>
+            <button class="button">VER MAIS</button>
+        </div>
+    </div>
+
+
+
+    <div id="link-topo">
+        <a href="" style="color: white;"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <script>
+        function exibirCamposData() {
+            var escolha = document.querySelector('input[name="viagem"]:checked').value;
+            var dataVolta = document.getElementById('data-volta');
+
+            if (escolha === 'ida_e_volta') {
+                dataVolta.style.display = "block";
+            } else {
+                dataVolta.style.display = "none";
+            }
+        }
+
+        function trocarMilhas(){
+            window.location.href= "troca-milhas.html"
+        }
+
+        function venderMilhas(){
+            window.location.href= "UnderMilhas.html"
+        }
+    </script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var radioNacional = document.getElementById('opcao-nacional');
+      var radioInternacional = document.getElementById('opcao-internacional');
+      var viagemNacional = document.getElementById('viagem-nacional');
+      var viagemInternacional = document.getElementById('viagem-internacional');
+  
+      radioNacional.addEventListener('change', function() {
+        viagemNacional.style.display = 'block';
+        viagemInternacional.style.display = 'none';
+      });
+  
+      radioInternacional.addEventListener('change', function() {
+        viagemNacional.style.display = 'none';
+        viagemInternacional.style.display = 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>

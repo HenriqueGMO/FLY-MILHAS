@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bb1a576acc.js" crossorigin="anonymous"></script>   
+    <title>Troca de Milhas</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap');
+
+    body{
+        font-family: Open sans;
+    margin: 0;
+  padding: 0;
+  background: linear-gradient(to top left, lightgray, white);
+  height: 759px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+    nav{
+    background: #FFFFFF;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    font-family: sans-serif;
+}
+
+nav .logo{
+    color: #333;
+    float: left;
+    display: block;
+    padding: 14px 16px;
+}
+
+nav a{
+    color: #333;
+    float: right;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.profile{
+    border-radius: 25px;
+    padding: 10px;
+    width: 400px;
+    height: 395px;
+    background-color: rgba(255, 255, 255, 0.3); /* Cor de fundo com transparência */
+  backdrop-filter: blur(10px);
+  margin-left: 520px;
+  margin-top: 20px;
+}
+.image{
+    width: 40px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11px;
+    margin-left: 60px;
+}
+
+button{
+    cursor: pointer;
+}
+</style>
+<body>
+
+    <nav>
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="troca-milhas.html">Troca de Milhas</a></li>
+        </ul>
+        <ul>
+            <li><a href="passagens.html">Passagens</a></li>
+        </ul>
+        <ul>
+            <li><a href="/inicial.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <br><br><br><br>
+
+    <div class="image">
+        <img src="/images/123__2_-removebg-preview.png" alt="" style="width: 200px;">
+    </div>
+    
+    <div class="profile">
+        <i class="fa-solid fa-user" style="font-size: 50px; border-radius: 50px; border: 2px solid black; padding: 10px;"></i>
+        <input type="text" placeholder="Nome" style="border-radius: 15px; border: none; background-color: lightgray; padding-left: 10px; height: 35px; margin-left: 20px;">
+        <br><br>
+        <input type="number" placeholder="Número de Milhas" style="border-radius: 15px; border: none; background-color: lightgray; padding-left: 10px; height: 35px; margin-left: 90px;">
+        <br><br>
+        <input type="email" placeholder="Email para contato" style="border-radius: 15px; border: none; background-color: lightgray; padding-left: 10px; height: 35px; margin-left: 90px;">
+        <br><br>
+        <p style="font-family: Poppins; font-size: 15px; color: gray; font-weight: normal; margin-left: 70px;">Data de entrada no 123 viagens</p>
+        <input type="date" placeholder="Data de entrada no 123 Viagens" style="border-radius: 15px; border: none; background-color: lightgray; padding-left: 10px; height: 35px; margin-left: 90px; width: 165px; color: gray;">
+        <br><br>
+        <button style="margin-top: 10px; margin-left: 98px; border-radius: 10px; border: none; padding-left: 20px; padding-right: 20px; background-color: #FF6961; color: white; height: 37px; font-weight: bold; box-shadow: 1px 1px 5px #333;">BUSCAR MILHAS</button>
+    </div>
+</body>
+</html>

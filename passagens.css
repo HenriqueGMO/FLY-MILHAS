@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+nav {
+  background: #FFFFFF;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+  position: relative;
+}
+
+nav .logo {
+  color: #333;
+  float: left;
+  display: block;
+  padding: 14px 16px;
+}
+
+nav a {
+  color: #333;
+  float: right;
+  text-decoration: none;
+  display: block;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+  width: 1000px;
+  height: 600px;
+  background: url(https://voenews.com.br/wp-content/uploads/2023/02/voenews.90-148-1000x600.jpg);
+  margin: 100px auto;
+  animation: slide 25s infinite;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  border: none;
+}
+
+@keyframes slide {
+  25% {
+    background: url(https://revistause.com.br/wp-content/uploads/2020/04/007-1000x600.jpg);
+  }
+  35% {
+    background: url(https://revistause.com.br/wp-content/uploads/2022/11/revista-use-barco-Triton-Yachts-1000x600.jpg);
+  }
+  45% {
+    background: url(https://voenews.com.br/wp-content/uploads/2020/04/Pousada-Spa-Pedra-da-Laguna-1-1000x600.jpg);
+  }
+  55% {
+    background: url(https://www.aovivodebrasilia.com.br/wp-content/uploads/2022/08/Dia-dos-Pais-1000x600.jpg);
+  }
+}
+
+.slider2 {
+  width: 1517px;
+  height: 600px;
+  background: url(https://todosdestinos.com/wp-content/uploads/2018/07/fortaleza.jpg);
+  margin-top: 40px;
+  margin-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  animation: slide2 25s infinite;
+}
+
+@keyframes slide2 {
+    25% {
+        background: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2022/06/cataratas-do-iguacu-foz-capa-01.jpg);
+      }
+      50% {
+        background: url(https://emtodolugarnet.files.wordpress.com/2021/07/pao-de-acucar.jpg?w=1640);
+      }
+      75% {
+        background: url(https://www.fatosdesconhecidos.com.br/wp-content/uploads/2019/04/capa-91-1600x800.jpg);
+      }
+}
+.preco {
+  border-radius: 80px;
+  border: 3px solid black;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contorno-texto {
+    text-shadow: 1px 1px 2px #fff, -1px -1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff;
+  }
+input[type="text"],
+input[type="date"]
+{
+    border-radius: 5px;
+    color: gray;
+    border: 2px solid #EDEEF1;
+}
+
+#link-topo{
+    text-decoration: none;
+    background-color: rgb(182, 3, 107);
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 1px 1px 8px #333;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.radio{
+    display: flex;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.escolha-destino{
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: none;
+    margin-left: 500px;
+    margin-top: -610px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    width: 500px;
+}
+
+.vig-2{
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 700px;
+}
+
+.vig-2 p{
+    margin-top: -200px;
+}
+
+.RJ {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 30px;
+}
+
+.RJ img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+
+.FZ {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 30px;
+}
+
+.FZ img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.viagens-50{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.SA {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 30px;
+}
+
+.SA img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.PS {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 30px;
+}
+
+.PS img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay{
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.viagens-int50{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.PA {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 30px;
+}
+
+.PA img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.MC {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 30px;
+}
+
+.MC img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.LA {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 30px;
+}
+
+.LA img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.MO {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 30px;
+}
+
+.MO img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button{
+    text-decoration: none;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 40px;
+    right: 110px;
+    padding: 10px 20px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover{
+    border-radius: 25px;
+    position: absolute;
+    bottom: 40px;
+    right: 110px;
+    padding: 10px 20px;
+    background: white;
+    color: #000;
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    left: 55px;
+    transition: 1s;
+    height: 40px;
+}
+
+.image{
+  width: 20px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 70px;
+}

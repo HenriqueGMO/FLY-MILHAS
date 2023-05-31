@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap');
+
+body{
+    font-family: Open sans;
+    margin: 0;
+  padding: 0;
+  background: linear-gradient(to top left, lightgray, white);
+  height: 1050px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+nav{
+    background: #FFFFFF;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    font-family: sans-serif;
+}
+
+nav .logo{
+    color: #333;
+    float: left;
+    display: block;
+    padding: 14px 16px;
+}
+
+nav a{
+    color: #333;
+    float: right;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -11px;
+    margin-left: 5px;
+}
+
+.fundo {
+    width: 1000px;
+    height: 600px;
+    background: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2019/07/aeroporto-pista-capa2019-01.jpg);
+    margin: 100px auto;
+    margin-top: 30px;
+    animation: slide 25s infinite;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    border: none;
+  }
+
+  .sobre{
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: none;
+    margin-left: 475px;
+    margin-top: -655px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    width: 550px;
+    height: 400px;
+}
